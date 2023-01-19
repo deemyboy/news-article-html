@@ -1,0 +1,26 @@
+$i: !important;
+
+body {
+    // display: none;
+}
+
+img {
+    margin: 1rem 0;
+}
+
+section {
+    border: 3px solid #279ef8;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+main {
+    @extend section;
+    border-color: #8eceff;
+
+    section {
+        border: none$i;
+        padding: 0;
+    }
+}

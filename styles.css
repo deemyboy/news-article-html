@@ -1,0 +1,20 @@
+img {
+  margin: 1rem 0;
+}
+
+section, main {
+  border: 3px solid #279ef8;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+main {
+  border-color: #8eceff;
+}
+main section, main main {
+  border: none !important;
+  padding: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
