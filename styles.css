@@ -58,6 +58,7 @@ main section, main .sidebar-nav, main main {
   font-weight: 600;
 }
 .sidebar-nav ul {
+  flex: 1 1 100%;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -78,16 +79,14 @@ main section, main .sidebar-nav, main main {
   width: 100%;
   display: block;
   margin: 0.5rem 0;
+  box-sizing: border-box;
 }
-
 .button:hover {
   border-top-color: #28597a;
   background: #28597a;
   color: #ccc;
 }
-
-.button:active,
-.button.active {
+.button:active, .button.active {
   border-top-color: #1b435e;
   background: #1b435e;
 }
