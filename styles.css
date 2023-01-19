@@ -1,8 +1,14 @@
-img {
-  margin: 1rem 0;
+body {
+  font-family: "Titillium Web", sans-serif;
 }
 
-section, main {
+img {
+  margin: 1rem 0;
+  width: 100%;
+  height: auto;
+}
+
+section, .sidebar-nav, main {
   border: 3px solid #279ef8;
   padding: 1rem;
   border-radius: 10px;
@@ -12,9 +18,78 @@ section, main {
 main {
   border-color: #8eceff;
 }
-main section, main main {
-  border: none !important;
+main section, main .sidebar-nav, main main {
+  border: none;
   padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container .row {
+  display: flex;
+  justify-content: center;
+}
+.container .row .col-4 {
+  width: 33%;
+}
+.container .row .col-8 {
+  width: 66%;
+}
+.container .hero-text {
+  margin: 0 auto;
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sidebar-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.sidebar-nav .sidebar-title {
+  font-weight: 600;
+}
+.sidebar-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-self: flex-start;
+}
+
+.button {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  padding: 5px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 100%;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.button:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: #ccc;
+}
+
+.button:active,
+.button.active {
+  border-top-color: #1b435e;
+  background: #1b435e;
 }
 
 /*# sourceMappingURL=styles.css.map */
