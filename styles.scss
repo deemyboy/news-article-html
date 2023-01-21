@@ -25,7 +25,7 @@ main {
     }
 }
 
-blockquote {
+.section__article--quote {
     font-family: serif;
 }
 
@@ -80,7 +80,7 @@ blockquote {
     }
 }
 
-.button {
+.nav-item__nav-link {
     border-top: 1px solid #96d1f8;
     background: #65a9d7;
     padding: .25rem.25rem;
@@ -102,7 +102,7 @@ blockquote {
     }
 
     &:active,
-    &.active {
+    &--active {
         border-top-color: #1b435e;
         background: #1b435e;
     }
